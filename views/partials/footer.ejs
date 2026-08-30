@@ -1,0 +1,48 @@
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Dally's Hope 4 Paws Rescue</h3>
+          <p>All-breed dog rescue serving New York, Connecticut, and Vermont. We rescue local dogs and assist rural shelters in the South.</p>
+          <p>PO Box 346, Hagaman, NY 12066</p>
+          <p>(518) 410-9201</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/adopt">Adoptable Dogs</a></li>
+            <li><a href="/help">How to Help</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p style="font-size: 0.875rem; margin-bottom: 0.75rem;">Get updates on new dogs and rescue news.</p>
+          <form class="newsletter-form" action="/contact/subscribe" method="POST">
+            <input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit">Join</button>
+          </form>
+          <p class="newsletter-success" id="newsletter-success-msg" style="display: none;">Thanks for subscribing!</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <%= new Date().getFullYear() %> Dally's Hope 4 Paws Rescue Inc. &middot; EIN: 82-3825005 &middot; NYS #RR277
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100064872153566" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

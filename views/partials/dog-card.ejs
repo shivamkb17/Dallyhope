@@ -1,0 +1,28 @@
+<div class="dog-card-shell viewport-reveal">
+  <article class="dog-card-core">
+    <div class="dog-card-image">
+      <img src="<%= dog.photo %>" alt="<%= dog.name %> — <%= dog.breed %>" loading="lazy">
+      <% if (dog.status === 'pending') { %>
+        <span class="dog-card-badge dog-card-badge--pending">Adoption Pending</span>
+      <% } else { %>
+        <span class="dog-card-badge dog-card-badge--available">Available</span>
+      <% } %>
+    </div>
+    <div class="dog-card-body">
+      <h3 class="dog-card-name"><%= dog.name %></h3>
+      <p class="dog-card-meta"><%= dog.breed %> &middot; <%= dog.age %> &middot; <%= dog.sex %></p>
+      <p class="dog-card-desc"><%= dog.description %></p>
+    </div>
+    <div class="dog-card-footer">
+      <a href="/adopt/<%= dog.id %>" class="btn btn-card-more">
+        <span>Meet <%= dog.name %></span>
+        <span class="btn-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </article>
+</div>

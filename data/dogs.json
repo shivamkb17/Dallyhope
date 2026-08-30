@@ -1,0 +1,74 @@
+[
+  {
+    "id": "buddy",
+    "name": "Buddy",
+    "breed": "Golden Retriever Mix",
+    "age": "3 years",
+    "sex": "Male",
+    "weight": "55 lbs",
+    "status": "available",
+    "description": "Buddy is a sweet, easygoing boy who loves belly rubs and long walks. He gets along great with other dogs and is house-trained. He came to us from a rural shelter in Georgia and has been thriving in his foster home.",
+    "photo": "/images/dogs/buddy.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  },
+  {
+    "id": "luna",
+    "name": "Luna",
+    "breed": "Pit Bull Terrier Mix",
+    "age": "2 years",
+    "sex": "Female",
+    "weight": "45 lbs",
+    "status": "available",
+    "description": "Luna is a gentle, affectionate girl who wants nothing more than to curl up next to you on the couch. She's great with kids and has been doing well in her foster home. She walks nicely on a leash and knows basic commands.",
+    "photo": "/images/dogs/luna.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  },
+  {
+    "id": "max",
+    "name": "Max",
+    "breed": "Black Lab Mix",
+    "age": "4 years",
+    "sex": "Male",
+    "weight": "65 lbs",
+    "status": "available",
+    "description": "Max is an active, playful boy who loves hiking and exploring. He's smart and eager to learn. He does best as the only dog in the home and would love an active family who can keep up with his energy.",
+    "photo": "/images/dogs/max.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy",
+    "breed": "Beagle Mix",
+    "age": "5 years",
+    "sex": "Female",
+    "weight": "28 lbs",
+    "status": "available",
+    "description": "Daisy is a curious, happy little girl with the most expressive ears you've ever seen. She loves sniffing around the yard and then napping in a sunny spot. She gets along with other dogs and cats.",
+    "photo": "/images/dogs/daisy.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  },
+  {
+    "id": "charlie",
+    "name": "Charlie",
+    "breed": "Shepherd Mix",
+    "age": "1.5 years",
+    "sex": "Male",
+    "weight": "50 lbs",
+    "status": "pending",
+    "description": "Charlie is a joyful, energetic young dog who loves to run and play fetch. He's still learning his manners but he's very food-motivated and picks things up quickly. He'd do great in a home with a yard.",
+    "photo": "/images/dogs/charlie.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  },
+  {
+    "id": "rosie",
+    "name": "Rosie",
+    "breed": "Brindle Mix",
+    "age": "9 years",
+    "sex": "Female",
+    "weight": "48 lbs",
+    "status": "available",
+    "description": "Rosie is a calm, sweet senior girl who's spent most of her life without a real home. She's low-energy, loves soft beds, and just wants a quiet place to spend her golden years. She's house-trained and gentle as can be.",
+    "photo": "/images/dogs/rosie.jpg",
+    "petfinderUrl": "https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/"
+  }
+]

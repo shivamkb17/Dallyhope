@@ -1,0 +1,71 @@
+<%- include('partials/header') %>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="/images/hero.jpg" alt="Rural New York countryside">
+      </div>
+      <div class="hero-content">
+        <h1>Dally's Hope 4 Paws Rescue</h1>
+        <p>Rescuing dogs and giving them a second chance at life. Serving New York, Connecticut, and Vermont.</p>
+        <a href="/adopt" class="btn btn--white btn--lg">Meet Our Dogs &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section">
+      <div class="container intro">
+        <h2>Who We Are</h2>
+        <p>We're a small, volunteer-run dog rescue based in Hagaman, New York. We rescue local dogs and pull from rural shelters in the South to give them a chance at finding loving homes across NY, CT, and VT.</p>
+      </div>
+    </section>
+
+    <!-- Featured Dogs -->
+    <% if (featuredDogs.length > 0) { %>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dogs Looking for Homes</h2>
+          <p>These are just a few of the dogs currently in our care.</p>
+        </div>
+        <div class="dogs-grid">
+          <% featuredDogs.forEach(dog => { %>
+            <%- include('partials/dog-card', { dog }) %>
+          <% }) %>
+        </div>
+        <div style="text-align: center; margin-top: var(--spacing-lg);">
+          <a href="/adopt" class="btn btn--primary btn--lg">See All Adoptable Dogs</a>
+        </div>
+      </div>
+    </section>
+    <% } %>
+
+    <!-- Help Strip -->
+    <section class="section help-strip">
+      <div class="container">
+        <h2>Ways You Can Help</h2>
+        <div class="help-strip-links">
+          <a href="/adopt">Adopt</a>
+          <a href="/help#foster">Foster</a>
+          <a href="/help#donate">Donate</a>
+          <a href="/help#volunteer">Volunteer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facebook CTA -->
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <h2>Follow Our Journey</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md); max-width: 480px; margin-left: auto; margin-right: auto;">
+          We post daily updates, happy adoption stories, and new rescue arrivals on Facebook.
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=100064872153566" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+          Follow Us on Facebook
+        </a>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/footer') %>

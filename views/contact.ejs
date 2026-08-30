@@ -1,0 +1,94 @@
+<%- include('partials/header') %>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have a question about adopting, fostering, or volunteering? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send a Message</h2>
+
+            <% if (success) { %>
+              <div class="form-message form-message--success"><%= success %></div>
+            <% } %>
+            <% if (error) { %>
+              <div class="form-message form-message--error"><%= error %></div>
+            <% } %>
+
+            <form method="POST" action="/contact">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" value="<%= formData.name || '' %>" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" value="<%= formData.email || '' %>" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject...</option>
+                  <option value="Adoption Inquiry" <%= formData.subject === 'Adoption Inquiry' ? 'selected' : '' %>>Adoption Inquiry</option>
+                  <option value="Foster" <%= formData.subject === 'Foster' ? 'selected' : '' %>>Fostering</option>
+                  <option value="Volunteer" <%= formData.subject === 'Volunteer' ? 'selected' : '' %>>Volunteering</option>
+                  <option value="Donation" <%= formData.subject === 'Donation' ? 'selected' : '' %>>Donation Question</option>
+                  <option value="General" <%= formData.subject === 'General' ? 'selected' : '' %>>General Question</option>
+                  <option value="Other" <%= formData.subject === 'Other' ? 'selected' : '' %>>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required><%= formData.message || '' %></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <ul class="contact-details">
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:contact@dallyshope4paws.org">contact@dallyshope4paws.org</a>
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <span>(518) 410-9201</span>
+              </li>
+              <li>
+                <strong>Mail</strong>
+                <span>PO Box 346, Hagaman, NY 12066</span>
+              </li>
+              <li>
+                <strong>Facebook</strong>
+                <a href="https://www.facebook.com/profile.php?id=100064872153566" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
+              </li>
+            </ul>
+
+            <div class="registration-info" style="margin-top: var(--spacing-lg);">
+              <h3>For Tax Purposes</h3>
+              <p><strong>Legal Name:</strong> Dally's Hope 4 Paws Rescue Inc.</p>
+              <p><strong>EIN:</strong> 82-3825005</p>
+              <p>All donations are tax-deductible under section 501(c)(3).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/footer') %>

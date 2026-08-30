@@ -1,0 +1,19 @@
+{
+  "name": "dallyshope4paws",
+  "version": "1.0.0",
+  "description": "Dally's Hope 4 Paws Rescue Inc. — Dog rescue website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

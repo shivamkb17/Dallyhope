@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+
+  <main>
+    <section class="page-header viewport-reveal">
+      <div class="container adopt-header">
+        <span class="eyebrow-tag">Find Your Companion</span>
+        <h1>Adoptable Dogs</h1>
+        <p>Every dog listed here is in a foster home and ready for their forever family. Click their profile to learn more about them and start an inquiry.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <!-- Filter -->
+        <div class="filter-bar viewport-reveal">
+          <a href="/adopt" class="filter-btn <%= activeFilter === 'all' ? 'active' : '' %>">All Dogs</a>
+          <a href="/adopt?status=available" class="filter-btn <%= activeFilter === 'available' ? 'active' : '' %>">Available</a>
+          <a href="/adopt?status=pending" class="filter-btn <%= activeFilter === 'pending' ? 'active' : '' %>">Adoption Pending</a>
+        </div>
+
+        <% if (dogs.length > 0) { %>
+          <div class="dogs-grid">
+            <% dogs.forEach(dog => { %>
+              <%- include('partials/dog-card', { dog }) %>
+            <% }) %>
+          </div>
+        <% } else { %>
+          <div style="text-align: center; padding: var(--spacing-xl) 0;" class="viewport-reveal">
+            <p style="color: var(--color-text-muted);">No dogs match this filter right now. Check back soon!</p>
+          </div>
+        <% } %>
+
+        <!-- External Links -->
+        <div class="adopt-external viewport-reveal">
+          <p>Looking for more search options? Browse our rescue profiles on adoption networks:</p>
+          <div class="adopt-external-buttons">
+            <a href="https://www.adoptapet.com/shelter/dallys-hope-4-paws-rescue-inc-hagaman-new-york" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">Browse Adopt-a-Pet</a>
+            <a href="https://www.petfinder.com/member/us/ny/hagaman/dallys-hope-4-paws-rescue-inc-ny1428/" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">Browse Petfinder</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/footer') %>
