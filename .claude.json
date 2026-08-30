@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+      "hostinger-hosting": {
+        "command": "npx",
+        "args": ["--package=hostinger-api-mcp@latest", "hostinger-hosting-mcp"],
+        "env": { "HOSTINGER_API_TOKEN": "op4ibfcLeKk4Q9aLYIbbcLCJJix9QSx6VGfX9Jgt39fa62ae" }
+      },
+      "hostinger-domains": {
+        "command": "npx",
+        "args": ["--package=hostinger-api-mcp@latest", "hostinger-domains-mcp"],
+        "env": { "HOSTINGER_API_TOKEN": "op4ibfcLeKk4Q9aLYIbbcLCJJix9QSx6VGfX9Jgt39fa62ae" }
+      }
+    }
+  }
