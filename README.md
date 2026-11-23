@@ -2,7 +2,7 @@
 
 Website for **Dally's Hope 4 Paws Rescue Inc.** — an all-breed dog rescue based in Hagaman, New York.
 
-🌐 [dallyshope4paws.org](https://dallyshope4paws.org)
+🌐 [dallyshope4pawsrescue.org](https://dallyshope4pawsrescue.org)
 
 ## Setup
 
